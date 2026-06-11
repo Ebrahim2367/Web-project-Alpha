@@ -15,13 +15,18 @@ form.addEventListener('submit', async (event) => {
             { username: usernameInput, password: passwordInput } 
         ]);
 
-    if (error) {
-        console.error('Database Error:', error.message);
-        alert('Registration failed: ' + error.message);
+if (error) {
+    console.error('Database Error:', error.message);
+    
+    // Check if the error is due to a duplicate username constraint
+    if (error.code === '23505') {
+        alert('Registration failed: That username is already taken!');
     } else {
-        console.log("Success:", data);
-        alert('Account successfully provisioned into the secure cloud database!');
-        form.reset(); 
-       
+        alert('Registration failed: ' + error.message);
     }
+} else {
+    console.log("Success:", data);
+    alert('Account successfully provisioned into the secure cloud database!');
+    form.reset();
+}
 });
