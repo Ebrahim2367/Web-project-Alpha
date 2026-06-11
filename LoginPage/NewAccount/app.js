@@ -1,5 +1,5 @@
 const SUPABASE_URL = 'https://eubzymhdjjgvhakswuki.supabase.co';
-const SUPABASE_KEY = process.env.SUPABASE_KEY;
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV1Ynp5bWhkampndmhha3N3dWtpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODExNzgyMDAsImV4cCI6MjA5Njc1NDIwMH0.2U9JRh0u_xxSFq9unQdm_YwqiAipNbYMkpeyOz3u0_k';
 
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 const form = document.getElementById('accountForm');
