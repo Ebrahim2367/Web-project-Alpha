@@ -1,0 +1,81 @@
+/* New Account Page Styles */
+
+#logo {
+    font-family: "Arial", sans-serif;
+    color: rgb(255, 81, 0);
+    margin: 0;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+.topbar-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Hide topbar controls on this page */
+.no-topbar-controls .topbar-controls {
+  display: none;
+}
+
+.button {
+    background-color: #ff5e00;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.button:hover {
+  background: #ffa444;
+  border-color: #999;
+}
+
+.button:active {
+  background: #ff3700;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+  padding-top: 64px;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 128, 0);
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 8px 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.text-input {
+  width: 200px;
+}
+
+form p {
+  margin: 10px 0;
+}

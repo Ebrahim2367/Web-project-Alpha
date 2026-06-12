@@ -2,19 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Store Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create a new Mega Plus account to buy and sell laptops, desktops, mobile accessories, and custom-built computers.">
+    <meta name="keywords" content="create account, register, sign up, Mega Plus, new user">
+    <meta name="author" content="Ebrahim Alhuissein">
+    <meta name="theme-color" content="#ff8000">
+    <meta property="og:title" content="Mega Plus - Create Account">
+    <meta property="og:description" content="Join Mega Plus and get access to exclusive laptop deals.">
+    <title>Create Account - Mega Plus</title>
+    <link rel="stylesheet" href="newaccount.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
-<body align="center">
+<body align="center" class="no-topbar-controls">
+  <header class="topbar">
+    <h1 id="logo">Mega Plus</h1>
+    <div class="topbar-controls">
+      <a href="../../index.html"><button class="button">Home</button></a>
+    </div>
+  </header>
 
-<h1 style="color: rgb(255, 128, 0);">Create new account</h1>
-    <form id="accountForm">
-        <p><input type="text" id="username" placeholder="Username" required></p>
-        <p><input type="password" id="password" placeholder="Password" required></p>
-        <p><button type="submit">Register Account</button></p>
-    </form>
+  <h1 style="color: rgb(255, 128, 0);">Create new account</h1>
+      <form id="accountForm">
+          <p><input type="text" id="username" placeholder="Username" required class="text-input"></p>
+          <p><input type="password" id="password" placeholder="Password" required class="text-input"></p>
+          <p><button type="submit" class="button">Register Account</button></p>
+      </form>
 
-    <script src="app.js"></script>
+      <script src="app.js"></script>
 </body>
 </html>

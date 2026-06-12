@@ -26,7 +26,7 @@ if (error) {
     }
 } else {
     console.log("Success:", data);
-    alert('Account successfully provisioned into the secure cloud database!');
+    alert('Account successfully inserted into the secure cloud database!');
     form.reset();
 }
 });

@@ -1,0 +1,150 @@
+/* Shared styles for all pages */
+#logo {
+    font-family: "Arial", sans-serif;
+    color: rgb(255, 81, 0);
+    margin: 0;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+.topbar-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.button {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: #ff8000;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.button:hover {
+  background: #ffa444;
+  border-color: #999;
+  cursor: pointer;
+}
+
+.button:active {
+  background: #ff3700;
+}
+
+/* Body styling */
+body {
+  font-family: "open sans", sans-serif;
+  padding-top: 64px;
+  margin: 0;
+}
+
+/* Index-specific styles */
+ .images img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;  
+}
+.images{
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.headlines {
+    color: rgb(176, 100, 0);
+}
+
+
+
+.old.price {
+    text-decoration: line-through;
+    text-decoration-color: rgb(255, 0, 0);
+    text-decoration-thickness: 0.1mm;
+    color: rgb(151, 151, 151);
+    font-size: 30px;
+}
+
+.new.price {
+    color: rgb(0, 174, 0);
+    font-size: 30px;
+}
+
+summary {
+  margin: 0;
+  cursor: pointer;
+}
+
+summary.headlines {
+  color: rgb(255, 255, 255);
+  background: #ff8000;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  user-select: none;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+summary.headlines:hover {
+  background: #ffa444;
+  border-color: #999;
+}
+
+summary.headlines:active {
+  background: #ff3700;
+}
+
+
+.deals-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .deals-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .images img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .deals-container {
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .images {
+        padding: 8px;
+    }
+    
+    .old.price {
+        font-size: 18px;
+    }
+    
+    .new.price {
+        font-size: 20px;
+    }
+}
